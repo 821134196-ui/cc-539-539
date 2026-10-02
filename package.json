@@ -1,0 +1,17 @@
+{
+  "name": "park-guest-vehicle",
+  "version": "1.0.0",
+  "description": "园区访客车辆临时通行系统：邀请、门岗核验、在园车辆、超时计费、异常放行、收费流水",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node src/cli.js start",
+    "seed": "node src/cli.js seed",
+    "reset": "node src/cli.js reset",
+    "demo": "node scripts/demo-replay.js",
+    "test": "node --test test/*.test.js"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

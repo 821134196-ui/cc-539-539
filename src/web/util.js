@@ -1,0 +1,15 @@
+export function esc(s) {
+  return String(s ?? '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
+export function parseForm(body) {
+  const params = new URLSearchParams(body);
+  const obj = {};
+  for (const [k, v] of params) obj[k] = v;
+  return obj;
+}
